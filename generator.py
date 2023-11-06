@@ -1,10 +1,13 @@
-def gen_step(chiclo, max_step):
+def gen_step(chiclo):
     i=0
-    for n in range(max_step):
-        yield chiclo**i
+    while True:
+        result = chiclo**i
+        yield result
+        if result>100**10:
+            return
         i+=1
 
-rez = gen_step(100000, 500)
+rez = gen_step(122345)
 print(rez)
 for t in rez:
     print(t)
