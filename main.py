@@ -3,4 +3,5 @@ iterator = iter(list)
 
 for elem in iterator:
     print(elem)
-
+for elem in iterator:
+    print(elem)
