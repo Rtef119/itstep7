@@ -4,7 +4,7 @@ def helper(work):
     def helper(work):
         return f"A /ne/ mozy dopomogtu z {insert_in_memory}, " \
                f"A potim z {work}"
-        return helper
+    return helper
 
 helper = helper("homework")
 #print(helper)
