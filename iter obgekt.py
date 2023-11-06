@@ -14,5 +14,12 @@ class Counter:
         return self.i
 
 count = Counter(5)
-for elem in count:
-    print(elem)
+
+print(count.__next__())
+print(count.__iter__())
+print(next(count))
+print(iter(count))
+print(next(count))
+
+#for elem in count:
+    #print(elem)
